@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,50 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .ll {
-            align-content: center;
-            margin: 70px; ;
-            background-color: rgb(46, 43, 43);
-            color: rgb(164, 164, 230);
-        text-decoration: underline;
-        }
-        .pp{
-             background-color: aquamarine;
-        text-decoration: underline;
-        
-            
-
-        }
-    </style>
 </head>
 <body>
-    <h1 class="pp">Hamza Rasheed</h1>
-    <h2 class="pp">
-        Checking Even Or Odd</h2>
-    <div class="ll">
-        <form onsubmit="Even(); return false;" >
-            <label >Enter Number For CHECK:  <br><input type="number"  id="num3"></label><br>
-        <button type="submit">Check</button>
-        <h3 id="result1"></h3>
-    
-        </form>
-    </div>
+    <h1>comparison operator</h1>
+    <script>
 
-   <script>
-        
+// let result = "6" < 70;
+// console.log( result);
+ let userInput =28;
+ if (userInput > 26 ) {
+    console.log("please turn off AC");
+    
+ }
+ let result = (userInput > 26) ?
+ "please turn off AC" : "please turn off AC"
+
+ let para = `turn ${(userInput >25) ? "on" :"off"} AC`;
+ console.log(para , para)
+    </script>
     
     
-    function Even() {
-        let num3=+document.querySelector('#num3').value
-        let result1=document.querySelector('#result1')
-        if (num3%2==0) {
-            result1.innerHTML="Even"
-        } else {
-            result1.innerHTML="Odd"
-        }
-    }
-    
-        </script>
 </body>
 </html>
